@@ -1,0 +1,81 @@
+'''
+attributes/properties
+---------------------------------------
+itemsize
+dtype
+shape
+'''
+
+'''
+
+methods
+------------
+
+arange() --- work similar to range function (start:stop:step) but we can provdie the data type as well..
+
+linspace() --- it will generate range of values with equal space in between them.. 
+start value
+end value
+number of values to be generted 
+'''
+
+
+
+
+plotting
+-----------------
+
+line chart
+
+pie chart
+
+Bar chart
+-----------------------------
+
+
+line chart
+-------------------
+lines
+--------------------
+
+
+
+
+
+lines
+-------------------------
+
+linestyle, linewidth,line color
+
+import numpy as np
+import matplotlib.pyplot as py
+x = [1,2,3,4]
+y = [7,6,5,4]
+py.xlabel("X")
+py.ylabel("Y")
+py.plot(x,y,'r',linewidth=4,linestyle="dotted")
+py.show()
+
+marker
+---------------------------
+
+marker
+---------------
+
+markertype,color,size 
+import numpy as np
+import matplotlib.pyplot as py
+x = [1,2,3,4]
+y = [7,6,5,4]
+py.xlabel("X")
+py.ylabel("Y")
+py.plot(x,y,'r',marker='d',markersize=5,markeredgecolor="red")
+py.show()
+
+
+
+
+
+
+
+
