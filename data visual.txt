@@ -38,14 +38,15 @@ line chart
 lines
 --------------------
 
-
+Line chart 
+-----------------------
 
 
 
 lines
 -------------------------
 
-linestyle, linewidth,line color
+linestyle, linewidth,line color or color name 
 
 import numpy as np
 import matplotlib.pyplot as py
@@ -62,6 +63,8 @@ marker
 marker
 ---------------
 
+marker, markersize,markeredgecolor
+
 markertype,color,size 
 import numpy as np
 import matplotlib.pyplot as py
@@ -71,6 +74,131 @@ py.xlabel("X")
 py.ylabel("Y")
 py.plot(x,y,'r',marker='d',markersize=5,markeredgecolor="red")
 py.show()
+
+
+
+
+
+
+
+
+
+Bar chart
+-----------------------------
+mport numpy as np
+import matplotlib.pyplot as py
+x = [1,2,3,4]
+y = [7,6,5,4]
+py.xlabel("X")
+py.ylabel("Y")
+py.bar(x,y)
+py.show()
+
+
+To increase or decrease the width, we have to use width attribute
+-----------------------------------------------------------
+
+
+mport numpy as np
+import matplotlib.pyplot as py
+x = [1,2,3,4]
+y = [7,6,5,4]
+py.xlabel("X")
+py.ylabel("Y")
+py.bar(x,y,width=0.1)
+py.show()
+
+
+
+If you want to give the width of different sizes for all elements then in width attribute you need to provide list of the sizes
+---------------------------------------------------------------------------------------------------------------------------------
+
+
+mport numpy as np
+import matplotlib.pyplot as py
+x = [1,2,3,4]
+y = [7,6,5,4]
+py.xlabel("X")
+py.ylabel("Y")
+py.bar(x,y,width=[0.1,0.2,0.3,0.4])
+py.show()
+
+
+If you need to provide color to the bar chart then color attribute is required
+------------------------------------------------------------------------------------------
+
+import numpy as np
+import matplotlib.pyplot as py
+x = [1,2,3,4]
+y = [7,6,5,4]
+py.xlabel("X")
+py.ylabel("Y")
+py.bar(x,y,color="r")
+py.show()
+
+
+
+import numpy as np
+import matplotlib.pyplot as py
+x = [1,2,3,4]
+y = [7,6,5,4]
+py.xlabel("X")
+py.ylabel("Y")
+py.bar(x,y,color=["r","g","y","b"])
+py.show()
+
+
+How to create multiple bar chart 
+-----------------------------------------
+
+
+
+
+import numpy as np
+import matplotlib.pyplot as py
+a = [1,2,3,4]
+b = [5,6,7,8]
+c = [4,9,1,2]
+x = np.arange(len(a))
+py.bar(x,a,color="r",width=0.4)
+py.bar(x+0.35,b,color="b",width=0.5)
+py.show()
+
+
+
+
+
+how to create horizontal bar 
+------------------------------------
+
+
+barh
+
+
+
+
+import numpy as np
+import matplotlib.pyplot as py
+x = [1,2,3,4]
+y = [7,6,5,4]
+py.xlabel("X")
+py.ylabel("Y")
+py.barh(x,y,color="r")
+py.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
