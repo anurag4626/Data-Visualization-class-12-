@@ -188,6 +188,49 @@ py.show()
 
 
 
+Pie chart 
+-------------------------------------
+
+
+
+import matplotlib.pyplot as py
+a = [100,80,20,30]
+b = ["c","d","r","f"]
+py.pie(a,labels=b,autopct="%3d%%")
+py.show()
+
+
+
+import matplotlib.pyplot as py
+a = [100,80,20,30]
+b = ["c","d","r","f"]
+e = [0.2,0.0,0.2,0.0]
+py.pie(a,labels=b,explode=e,autopct="%3d%%")
+py.show()
+
+
+
+import matplotlib.pyplot as py
+a = [100,80,20,30]
+b = ["c","d","r","f"]
+e = [0.2,0.0,0.2,0.0]
+c = ["r","g","b","m"]
+py.pie(a,labels=b,colors=c,explode=e,autopct="%3d%%")
+py.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
